@@ -1,0 +1,64 @@
+\documentclass[letterpaper,11pt]{article}
+
+% disable all hyperlinks (prints them as normal text only)
+% \PassOptionsToPackage{draft}{hyperref}
+
+% Choose bibliography style for formatting list of publications
+\usepackage[style=ieee,url=false,doi=false,maxbibnames=99,sorting=ydnt,dashed=false]{biblatex}
+\bibliography{papers}
+
+% Choose theme, e.g. black, RedViolet, ForestGreen, MidnightBlue
+\def\theme{MidnightBlue}
+
+% More predefined colors can be found in 
+% https://en.wikibooks.org/wiki/LaTeX/Colors
+% Example photograph taken from Wikimedia Commons
+% https://commons.wikimedia.org/wiki/File:Kiara_Krit_passport.jpg
+
+\usepackage{simplecv}
+\usepackage{fontawesome}
+
+\boldname{Kharisov}{Timur}{N.}
+
+\usepackage{geometry}
+\geometry{a4paper, left = 9mm, top = 7mm, right = 9mm, bottom = 15mm}
+\begin{document}
+
+\setlength{\parskip}{-3pt}
+
+% Heading
+\headinginline{Timur Kharisov}{
+    \textit{Email:} \email{tkharisov7@gmail.com} \\
+    \textit{Phone number}: +33-768776971 \\
+    \textit{Website:} \link{https://kharisov.me}{kharisov.me} \\
+    % \textit{Postal Address:} 233 rue Pierre de Coubertin, appartement 3339, Bures-sur-Yvette, France, 91440\\
+    \textit{LinkedIn:} \linkedin{@tkharisov7} \\
+    % \textit{GitHub:} \github{@tkharisov7} \\
+    \textit{Residence:} Paris, France \\
+    \textit{Date of birth:} March 26, 2002\\
+    \textit{Citizenship:} Russian Federation
+}
+
+% Page One
+% \thispagestyle{empty}
+% \pagestyle{fancy}
+
+\import{sections/}{education.tex}
+
+\vspace{-2pt}
+
+\import{sections/}{experience.tex}
+
+\vspace{-12pt}
+
+\import{sections/}{awards.tex}
+
+\vspace{-2pt}
+
+\import{sections/}{skills.tex}
+% \import{sections/}{publications.tex}
+    \fancyfoot[L]{\scriptsize Last edited: \today}
+    \fancyfoot[C]{}
+    \fancyfoot[R]{\scriptsize © Timur Kharisov. This resume is confidential and may not be shared with third parties without permission.}
+
+\end{document}

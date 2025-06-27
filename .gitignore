@@ -1,0 +1,14 @@
+# MacOS
+.DS_Store
+
+# Latex
+.aux
+.bbl
+.log
+.xml
+.blg
+.bcf
+.out
+.run.xml
+.synctex.gz
+.fdb_latexmk
